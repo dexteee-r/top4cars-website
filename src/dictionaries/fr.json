@@ -1,0 +1,107 @@
+{
+  "nav": {
+    "services": "Services",
+    "howItWorks": "Comment ça marche",
+    "zone": "Zone",
+    "contact": "Contact",
+    "call": "Appeler"
+  },
+  "hero": {
+    "badge": "Intervention rapide en Belgique",
+    "title": "Dépannage Auto partout en Belgique, disponible ",
+    "highlight": "24h/24 & 7j/7",
+    "subtitle": "Un problème sur la route ? Panne, accident ou batterie à plat : notre équipe d'experts intervient rapidement pour remorquer votre véhicule en toute sécurité.",
+    "ctaPrimary": "Appeler maintenant",
+    "ctaSecondary": "Voir nos services",
+    "phoneLabel": "Urgence 24/7",
+    "metrics": {
+      "available": "Disponible",
+      "time": "Intervention",
+      "area": "Toute la Belgique"
+    }
+  },
+  "marquee": {
+    "fast": "INTERVENTION RAPIDE 24H/24",
+    "area": "PARTOUT EN BELGIQUE",
+    "price": "PRIX DÉFIANT TOUTE CONCURRENCE"
+  },
+  "services": {
+    "badge": "NOS SERVICES",
+    "title1": "Une solution pour ",
+    "title2": "chaque situation.",
+    "subtitle": "Peu importe le problème, nous avons l'équipement et l'expertise pour vous remettre en route.",
+    "items": {
+      "depannage": {
+        "title": "Dépannage voiture",
+        "desc": "Diagnostic et réparation sur place quand c'est possible. Notre technicien identifie le problème et tente de vous remettre en route rapidement."
+      },
+      "remorquage": {
+        "title": "Remorquage",
+        "desc": "Transport sécurisé de votre véhicule vers le garage de votre choix."
+      },
+      "batterie": {
+        "title": "Batterie à plat",
+        "desc": "Démarrage par booster professionnel ou remplacement de batterie sur place."
+      },
+      "accident": {
+        "title": "Panne & Accident",
+        "desc": "Intervention d'urgence en cas d'accident ou de panne imprévue. Mise en sécurité du véhicule et remorquage si nécessaire."
+      },
+      "portiere": {
+        "title": "Ouverture de portières",
+        "desc": "Clés enfermées dans le véhicule ? Nous ouvrons votre portière sans dommage, rapidement et en toute sécurité."
+      }
+    }
+  },
+  "howItWorks": {
+    "badge": "3 ÉTAPES SIMPLES",
+    "title1": "Comment ça ",
+    "title2": "marche ?",
+    "steps": {
+      "step1": {
+        "title": "Appelez-nous",
+        "desc": "Un seul numéro à retenir : 0483 02 08 20. Disponible jour et nuit, week-ends et jours fériés inclus."
+      },
+      "step2": {
+        "title": "On arrive",
+        "desc": "Notre dépanneuse la plus proche est envoyée immédiatement. Temps d'intervention moyen inférieur à 45 minutes."
+      },
+      "step3": {
+        "title": "Problème réglé",
+        "desc": "Réparation sur place ou remorquage vers le garage de votre choix. Vous ne restez jamais en rade."
+      }
+    }
+  },
+  "coverageZone": {
+    "badge": "ZONE D'INTERVENTION",
+    "title1": "Nous couvrons ",
+    "title2": "toute la Belgique.",
+    "subtitle": "Notre flotte de dépanneuses est stratégiquement répartie pour garantir une intervention sous 45 minutes partout dans le pays.",
+    "features": {
+      "speed": {
+        "title": "Intervention rapide",
+        "desc": "Temps moyen d'arrivée inférieur à 45 minutes sur l'ensemble de notre zone."
+      },
+      "area": {
+        "title": "Wallonie & Flandre",
+        "desc": "Couverture complète des deux régions. Autoroutes et routes secondaires."
+      },
+      "price": {
+        "title": "Prix transparent",
+        "desc": "Devis annoncé par téléphone avant intervention. Aucun supplément caché."
+      }
+    }
+  },
+  "ctaFinal": {
+    "title": "En panne ? Appelez-nous maintenant.",
+    "availability": "Disponible 24h/24 — 7j/7 — Jours fériés inclus",
+    "button": "Appeler maintenant",
+    "orEmail": "ou par email :"
+  },
+  "footer": {
+    "rights": "Tous droits réservés."
+  },
+  "stickyMobile": {
+    "call": "Appeler le"
+  }
+}

@@ -185,18 +185,16 @@ export function Hero({ dict }: { dict: any }) {
         {/* Hero Image */}
         <div className="t4c-reveal t4c-reveal-delay-3 relative flex justify-center lg:justify-end mt-8 lg:mt-0">
           <div className="relative w-full max-w-[650px]">
-            <img 
-              src="/hero-truck.png" 
-              alt="Dépanneuse TOP4CARS" 
+            <img
+              src="/hero-truck.png"
+              alt="Dépanneuse TOP4CARS"
               className="object-contain w-full h-auto"
-              style={{ 
+              style={{
                 filter: 'drop-shadow(0 20px 40px rgba(255, 69, 0, 0.25))',
-                transform: 'scaleX(-1)' // Si on veut que le camion regarde vers le texte, sinon retirer cette ligne
               }}
             />
           </div>
-        </div>
-      </div>
+        </div>      </div>
     </section>
   );
 }

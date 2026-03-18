@@ -59,40 +59,40 @@ export function Services({ dict }: { dict: any }) {
       icon: <WrenchIcon />,
       title: dict.services.items.depannage.title,
       desc: dict.services.items.depannage.desc,
+      image: 'https://images.unsplash.com/photo-1605330364448-63cb5f231eeb?q=80&w=800',
       gridClass: 't4c-bento-wide',
-      num: '01'
     },
     {
       id: 'remorquage',
       icon: <TruckIcon />,
       title: dict.services.items.remorquage.title,
       desc: dict.services.items.remorquage.desc,
+      image: 'https://images.unsplash.com/photo-1542158866-267964a2c161?q=80&w=800',
       gridClass: 't4c-bento-normal',
-      num: '02'
     },
     {
       id: 'batterie',
       icon: <BatteryIcon />,
       title: dict.services.items.batterie.title,
       desc: dict.services.items.batterie.desc,
+      image: 'https://images.unsplash.com/photo-1616428766150-1de103f6eb7c?q=80&w=800',
       gridClass: 't4c-bento-normal',
-      num: '03'
     },
     {
       id: 'accident',
       icon: <WarningIcon />,
       title: dict.services.items.accident.title,
       desc: dict.services.items.accident.desc,
+      image: 'https://images.unsplash.com/photo-1533206253457-304e2d3ce604?q=80&w=800',
       gridClass: 't4c-bento-medium',
-      num: '04'
     },
     {
       id: 'portiere',
       icon: <LockOpenIcon />,
       title: dict.services.items.portiere.title,
       desc: dict.services.items.portiere.desc,
+      image: 'https://images.unsplash.com/photo-1596704944883-fae43e260bb2?q=80&w=800',
       gridClass: 't4c-bento-medium',
-      num: '05'
     },
   ];
 
@@ -138,33 +138,50 @@ export function Services({ dict }: { dict: any }) {
                 ref={ref}
                 className={`t4c-reveal t4c-reveal-delay-${(i % 3) + 1} ${service.gridClass}`}
               >
-                <article className="t4c-service-card-bento" aria-label={service.title}>
-                  
-                  <div className="t4c-service-icon-bento">
-                    {service.icon}
+                <article 
+                  className="t4c-service-card-bento group relative overflow-hidden" 
+                  aria-label={service.title}
+                >
+                  {/* Background Image Layer */}
+                  <div className="absolute inset-0 z-0 transition-opacity duration-500 ease-out opacity-10 md:opacity-0 md:group-hover:opacity-15">
+                    <img 
+                      src={service.image} 
+                      alt="" 
+                      className="w-full h-full object-cover grayscale"
+                      loading="lazy"
+                    />
+                    {/* Overlay to darken and blend with site theme */}
+                    <div className="absolute inset-0 bg-[#08080F]/60"></div>
                   </div>
 
-                  <h3 style={{
-                    fontFamily: 'var(--t4c-font-display)',
-                    fontWeight: 800,
-                    fontSize: '1.5rem',
-                    color: 'var(--t4c-text)',
-                    marginBottom: '1rem',
-                    textTransform: 'uppercase',
-                    lineHeight: 1.1,
-                  }}>
-                    {service.title}
-                  </h3>
-                  
-                  <p style={{
-                    fontFamily: 'var(--t4c-font-body)',
-                    fontSize: '0.95rem',
-                    lineHeight: 1.6,
-                    color: 'var(--t4c-muted)',
-                    margin: 0,
-                  }}>
-                    {service.desc}
-                  </p>
+                  {/* Content Layer */}
+                  <div className="relative z-10">
+                    <div className="t4c-service-icon-bento">
+                      {service.icon}
+                    </div>
+
+                    <h3 style={{
+                      fontFamily: 'var(--t4c-font-display)',
+                      fontWeight: 800,
+                      fontSize: '1.5rem',
+                      color: 'var(--t4c-text)',
+                      marginBottom: '1rem',
+                      textTransform: 'uppercase',
+                      lineHeight: 1.1,
+                    }}>
+                      {service.title}
+                    </h3>
+                    
+                    <p style={{
+                      fontFamily: 'var(--t4c-font-body)',
+                      fontSize: '0.95rem',
+                      lineHeight: 1.6,
+                      color: 'var(--t4c-muted)',
+                      margin: 0,
+                    }}>
+                      {service.desc}
+                    </p>
+                  </div>
                 </article>
               </div>
             );
@@ -174,4 +191,3 @@ export function Services({ dict }: { dict: any }) {
     </section>
   );
 }
-

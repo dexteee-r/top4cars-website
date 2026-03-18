@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# TOP4CARS — Dépannage Auto (Next.js Version)
 
-## Getting Started
+Bienvenue sur le dépôt du site web de **TOP4CARS**, une société de dépannage et remorquage automobile premium opérant dans toute la Belgique.
 
-First, run the development server:
+## 🚀 À propos du projet
+Ce site a été conçu pour offrir une expérience utilisateur fluide, rapide et moderne (Mobile-First), permettant un contact immédiat en cas d'urgence.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Technologies utilisées
+- **Framework :** [Next.js 15+](https://nextjs.org/) (App Router)
+- **Styling :** [Tailwind CSS v4](https://tailwindcss.com/)
+- **Animations :** [Motion (Framer Motion)](https://motion.dev/)
+- **Internationalisation :** Système i18n personnalisé (FR, NL, EN, DE)
+- **Cartographie :** [Leaflet.js](https://leafletjs.org/) (Lazy-loaded pour la performance)
+- **Typographie :** Outfit (Display/Body) & JetBrains Mono (Stats/Numéros)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ Fonctionnalités clés
+- **Design "Nuit Rouge" :** Esthétique premium dark mode inspirée de l'automobile.
+- **Multilingue :** Support complet pour les 4 langues principales de la région.
+- **Bento Grid Services :** Présentation moderne des services de dépannage.
+- **Carte Interactive :** Zone d'intervention dynamique partout en Belgique.
+- **Performance & SEO :** Optimisé pour le référencement local (Schema.org JSON-LD).
+- **Sticky Mobile CTA :** Bouton d'appel d'urgence persistant sur mobile.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Installation et Développement
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Clonez le dépôt :
+   ```bash
+   git clone https://github.com/dexteee-r/top4cars-website.git
+   ```
 
-## Learn More
+2. Installez les dépendances :
+   ```bash
+   npm install
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+3. Lancez le serveur de développement :
+   ```bash
+   npm run dev
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. Build pour la production :
+   ```bash
+   npm run build
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📄 Licence
+© 2026 TOP4CARS — Tous droits réservés.
+Réalisé pour Nassim.

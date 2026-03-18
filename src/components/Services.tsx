@@ -144,7 +144,7 @@ export function Services({ dict }: { dict: any }) {
                   aria-label={service.title}
                 >
                   {/* Background Image Layer */}
-                  <div className="absolute inset-0 z-0 transition-opacity duration-500 ease-out opacity-20 md:opacity-0 md:group-hover:opacity-30">
+                  <div className="absolute inset-0 z-0 opacity-25">
                     <img 
                       src={service.image} 
                       alt="" 

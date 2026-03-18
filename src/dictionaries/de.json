@@ -1,0 +1,107 @@
+{
+  "nav": {
+    "services": "Dienstleistungen",
+    "howItWorks": "Wie es funktioniert",
+    "zone": "Einsatzgebiet",
+    "contact": "Kontakt",
+    "call": "Anrufen"
+  },
+  "hero": {
+    "badge": "Schnelle Hilfe in Belgien",
+    "title": "Pannenhilfe überall in Belgien, erreichbar ",
+    "highlight": "24/7",
+    "subtitle": "Autopanne? Unfall oder leere Batterie: Unser Expertenteam greift schnell ein, um Ihr Fahrzeug sicher abzuschleppen.",
+    "ctaPrimary": "Jetzt anrufen",
+    "ctaSecondary": "Unsere Dienste",
+    "phoneLabel": "Notfall 24/7",
+    "metrics": {
+      "available": "Verfügbar",
+      "time": "Einsatzzeit",
+      "area": "Ganz Belgien"
+    }
+  },
+  "marquee": {
+    "fast": "SCHNELLE HILFE 24/7",
+    "area": "ÜBERALL IN BELGIEN",
+    "price": "UNSCHLAGBARE PREISE"
+  },
+  "services": {
+    "badge": "UNSERE DIENSTE",
+    "title1": "Eine Lösung für ",
+    "title2": "jede Situation.",
+    "subtitle": "Egal was das Problem ist, wir haben die Ausrüstung und das Fachwissen, um Sie wieder auf die Straße zu bringen.",
+    "items": {
+      "depannage": {
+        "title": "Pannenhilfe",
+        "desc": "Diagnose und Reparatur vor Ort, wenn möglich. Unser Techniker identifiziert das Problem und versucht, Sie schnell wieder auf die Straße zu bringen."
+      },
+      "remorquage": {
+        "title": "Abschleppen",
+        "desc": "Sicherer Transport Ihres Fahrzeugs zur Werkstatt Ihrer Wahl."
+      },
+      "batterie": {
+        "title": "Leere Batterie",
+        "desc": "Starthilfe mit professionellem Booster oder Batteriewechsel vor Ort."
+      },
+      "accident": {
+        "title": "Panne & Unfall",
+        "desc": "Notfalleinsatz bei Unfall oder unvorhergesehener Panne. Sicherung des Fahrzeugs und Abschleppen falls nötig."
+      },
+      "portiere": {
+        "title": "Türöffnung",
+        "desc": "Schlüssel im Auto eingeschlossen? Wir öffnen Ihre Tür ohne Beschädigung, schnell und sicher."
+      }
+    }
+  },
+  "howItWorks": {
+    "badge": "3 EINFACHE SCHRITTE",
+    "title1": "Wie es ",
+    "title2": "funktioniert?",
+    "steps": {
+      "step1": {
+        "title": "Rufen Sie uns an",
+        "desc": "Nur eine Nummer, die Sie sich merken müssen: 0483 02 08 20. Tag und Nacht erreichbar, auch an Wochenenden und Feiertagen."
+      },
+      "step2": {
+        "title": "Wir kommen",
+        "desc": "Unser nächstgelegener Abschleppwagen wird sofort losgeschickt. Durchschnittliche Reaktionszeit unter 45 Minuten."
+      },
+      "step3": {
+        "title": "Problem gelöst",
+        "desc": "Reparatur vor Ort oder Abschleppen zur Werkstatt Ihrer Wahl. Sie bleiben nie liegen."
+      }
+    }
+  },
+  "coverageZone": {
+    "badge": "EINSATZGEBIET",
+    "title1": "Wir decken ",
+    "title2": "ganz Belgien ab.",
+    "subtitle": "Unsere Flotte von Abschleppwagen ist strategisch verteilt, um überall im Land einen Einsatz innerhalb von 45 Minuten zu garantieren.",
+    "features": {
+      "speed": {
+        "title": "Schneller Einsatz",
+        "desc": "Durchschnittliche Ankunftszeit von weniger als 45 Minuten in unserem gesamten Gebiet."
+      },
+      "area": {
+        "title": "Wallonien & Flandern",
+        "desc": "Vollständige Abdeckung beider Regionen. Autobahnen und Nebenstraßen."
+      },
+      "price": {
+        "title": "Transparenter Preis",
+        "desc": "Kostenvoranschlag telefonisch vor dem Einsatz. Keine versteckten Kosten."
+      }
+    }
+  },
+  "ctaFinal": {
+    "title": "Panne? Rufen Sie uns jetzt an.",
+    "availability": "Verfügbar 24/7 — Auch an Feiertagen",
+    "button": "Jetzt anrufen",
+    "orEmail": "oder per E-Mail:"
+  },
+  "footer": {
+    "rights": "Alle Rechte vorbehalten."
+  },
+  "stickyMobile": {
+    "call": "Anrufen"
+  }
+}

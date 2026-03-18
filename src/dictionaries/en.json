@@ -1,0 +1,107 @@
+{
+  "nav": {
+    "services": "Services",
+    "howItWorks": "How it works",
+    "zone": "Coverage Area",
+    "contact": "Contact",
+    "call": "Call"
+  },
+  "hero": {
+    "badge": "Fast intervention in Belgium",
+    "title": "Car Towing anywhere in Belgium, available ",
+    "highlight": "24/7",
+    "subtitle": "Car trouble? Breakdown, accident, or flat battery: our team of experts intervenes quickly to safely tow your vehicle.",
+    "ctaPrimary": "Call Now",
+    "ctaSecondary": "View Services",
+    "phoneLabel": "Emergency 24/7",
+    "metrics": {
+      "available": "Available",
+      "time": "Intervention",
+      "area": "All of Belgium"
+    }
+  },
+  "marquee": {
+    "fast": "FAST INTERVENTION 24/7",
+    "area": "ANYWHERE IN BELGIUM",
+    "price": "UNBEATABLE PRICES"
+  },
+  "services": {
+    "badge": "OUR SERVICES",
+    "title1": "A solution for ",
+    "title2": "every situation.",
+    "subtitle": "No matter the problem, we have the equipment and expertise to get you back on the road.",
+    "items": {
+      "depannage": {
+        "title": "Breakdown Service",
+        "desc": "On-site diagnosis and repair when possible. Our technician identifies the problem and tries to get you back on the road quickly."
+      },
+      "remorquage": {
+        "title": "Towing",
+        "desc": "Safe transport of your vehicle to the garage of your choice."
+      },
+      "batterie": {
+        "title": "Flat Battery",
+        "desc": "Jump start with professional booster or on-site battery replacement."
+      },
+      "accident": {
+        "title": "Breakdown & Accident",
+        "desc": "Emergency intervention in case of accident or unforeseen breakdown. Securing the vehicle and towing if necessary."
+      },
+      "portiere": {
+        "title": "Door Opening",
+        "desc": "Keys locked inside? We open your door without damage, quickly and safely."
+      }
+    }
+  },
+  "howItWorks": {
+    "badge": "3 SIMPLE STEPS",
+    "title1": "How it ",
+    "title2": "works?",
+    "steps": {
+      "step1": {
+        "title": "Call us",
+        "desc": "Only one number to remember: 0483 02 08 20. Available day and night, including weekends and holidays."
+      },
+      "step2": {
+        "title": "We're on our way",
+        "desc": "Our closest tow truck is dispatched immediately. Average response time under 45 minutes."
+      },
+      "step3": {
+        "title": "Problem solved",
+        "desc": "On-site repair or towing to the garage of your choice. You are never left stranded."
+      }
+    }
+  },
+  "coverageZone": {
+    "badge": "COVERAGE AREA",
+    "title1": "We cover ",
+    "title2": "all of Belgium.",
+    "subtitle": "Our fleet of tow trucks is strategically distributed to guarantee an intervention within 45 minutes anywhere in the country.",
+    "features": {
+      "speed": {
+        "title": "Fast intervention",
+        "desc": "Average arrival time under 45 minutes across our entire area."
+      },
+      "area": {
+        "title": "Wallonia & Flanders",
+        "desc": "Complete coverage of both regions. Highways and secondary roads."
+      },
+      "price": {
+        "title": "Transparent pricing",
+        "desc": "Quote provided by phone before intervention. No hidden fees."
+      }
+    }
+  },
+  "ctaFinal": {
+    "title": "Breakdown? Call us now.",
+    "availability": "Available 24/7 — Including holidays",
+    "button": "Call now",
+    "orEmail": "or by email:"
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  },
+  "stickyMobile": {
+    "call": "Call"
+  }
+}

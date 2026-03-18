@@ -1,0 +1,107 @@
+{
+  "nav": {
+    "services": "Diensten",
+    "howItWorks": "Hoe het werkt",
+    "zone": "Werkgebied",
+    "contact": "Contact",
+    "call": "Bellen"
+  },
+  "hero": {
+    "badge": "Snelle interventie in België",
+    "title": "Takeldienst overal in België, beschikbaar ",
+    "highlight": "24/7",
+    "subtitle": "Problemen onderweg? Pech, ongeval of platte batterij: ons team van experts grijpt snel in om uw voertuig veilig te slepen.",
+    "ctaPrimary": "Nu bellen",
+    "ctaSecondary": "Onze diensten",
+    "phoneLabel": "Spoed 24/7",
+    "metrics": {
+      "available": "Beschikbaar",
+      "time": "Interventie",
+      "area": "Heel België"
+    }
+  },
+  "marquee": {
+    "fast": "SNELLE INTERVENTIE 24/7",
+    "area": "OVERAL IN BELGIË",
+    "price": "ONKLOPBARE PRIJZEN"
+  },
+  "services": {
+    "badge": "ONZE DIENSTEN",
+    "title1": "Een oplossing voor ",
+    "title2": "elke situatie.",
+    "subtitle": "Wat het probleem ook is, wij hebben de apparatuur en expertise om u weer op weg te helpen.",
+    "items": {
+      "depannage": {
+        "title": "Pechverhelping",
+        "desc": "Diagnose en reparatie ter plaatse indien mogelijk. Onze technicus identificeert het probleem en probeert u snel weer op weg te helpen."
+      },
+      "remorquage": {
+        "title": "Takelen",
+        "desc": "Veilig transport van uw voertuig naar de garage van uw keuze."
+      },
+      "batterie": {
+        "title": "Platte batterij",
+        "desc": "Starten met professionele booster of batterijvervanging ter plaatse."
+      },
+      "accident": {
+        "title": "Pech & Ongeval",
+        "desc": "Spoedinterventie bij ongeval of onvoorziene pech. Beveiliging van het voertuig en slepen indien nodig."
+      },
+      "portiere": {
+        "title": "Deuren openen",
+        "desc": "Sleutels ingesloten? Wij openen uw deur zonder schade, snel en veilig."
+      }
+    }
+  },
+  "howItWorks": {
+    "badge": "3 EENVOUDIGE STAPPEN",
+    "title1": "Hoe het ",
+    "title2": "werkt?",
+    "steps": {
+      "step1": {
+        "title": "Bel ons",
+        "desc": "Slechts één nummer om te onthouden: 0483 02 08 20. Dag en nacht bereikbaar, inclusief weekends en feestdagen."
+      },
+      "step2": {
+        "title": "We komen eraan",
+        "desc": "Onze dichtstbijzijnde takelwagen wordt onmiddellijk gestuurd. Gemiddelde wachttijd minder dan 45 minuten."
+      },
+      "step3": {
+        "title": "Probleem opgelost",
+        "desc": "Reparatie ter plaatse of slepen naar de garage van uw keuze. U staat er nooit alleen voor."
+      }
+    }
+  },
+  "coverageZone": {
+    "badge": "WERKGEBIED",
+    "title1": "Wij dekken ",
+    "title2": "heel België.",
+    "subtitle": "Onze vloot van takelwagens is strategisch verspreid om overal in het land een interventie binnen 45 minuten te garanderen.",
+    "features": {
+      "speed": {
+        "title": "Snelle interventie",
+        "desc": "Gemiddelde aankomsttijd van minder dan 45 minuten in ons hele gebied."
+      },
+      "area": {
+        "title": "Wallonië & Vlaanderen",
+        "desc": "Volledige dekking van beide regio's. Snelwegen en secundaire wegen."
+      },
+      "price": {
+        "title": "Transparante prijs",
+        "desc": "Prijsopgave vooraf telefonisch meegedeeld. Geen verborgen kosten."
+      }
+    }
+  },
+  "ctaFinal": {
+    "title": "Pech? Bel ons nu.",
+    "availability": "Beschikbaar 24/7 — Ook op feestdagen",
+    "button": "Nu bellen",
+    "orEmail": "of via email:"
+  },
+  "footer": {
+    "rights": "Alle rechten voorbehouden."
+  },
+  "stickyMobile": {
+    "call": "Bel"
+  }
+}

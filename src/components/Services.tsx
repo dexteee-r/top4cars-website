@@ -1,5 +1,6 @@
 "use client";
 import { useScrollReveal } from '../hooks/useScrollReveal';
+import Image from 'next/image';
 
 // SVG Icons
 function WrenchIcon() {
@@ -59,7 +60,7 @@ export function Services({ dict }: { dict: any }) {
       icon: <WrenchIcon />,
       title: dict.services.items.depannage.title,
       desc: dict.services.items.depannage.desc,
-      image: 'https://images.unsplash.com/photo-1605330364448-63cb5f231eeb?q=80&w=800',
+      image: '/services/service-depannage.png',
       gridClass: 't4c-bento-wide',
     },
     {
@@ -67,7 +68,7 @@ export function Services({ dict }: { dict: any }) {
       icon: <TruckIcon />,
       title: dict.services.items.remorquage.title,
       desc: dict.services.items.remorquage.desc,
-      image: 'https://images.unsplash.com/photo-1542158866-267964a2c161?q=80&w=800',
+      image: '/services/service-remorquage.png',
       gridClass: 't4c-bento-normal',
     },
     {
@@ -75,7 +76,7 @@ export function Services({ dict }: { dict: any }) {
       icon: <BatteryIcon />,
       title: dict.services.items.batterie.title,
       desc: dict.services.items.batterie.desc,
-      image: 'https://images.unsplash.com/photo-1616428766150-1de103f6eb7c?q=80&w=800',
+      image: '/services/service-batterie.png',
       gridClass: 't4c-bento-normal',
     },
     {
@@ -83,7 +84,7 @@ export function Services({ dict }: { dict: any }) {
       icon: <WarningIcon />,
       title: dict.services.items.accident.title,
       desc: dict.services.items.accident.desc,
-      image: 'https://images.unsplash.com/photo-1533206253457-304e2d3ce604?q=80&w=800',
+      image: '/services/service-accident.png',
       gridClass: 't4c-bento-medium',
     },
     {
@@ -91,7 +92,7 @@ export function Services({ dict }: { dict: any }) {
       icon: <LockOpenIcon />,
       title: dict.services.items.portiere.title,
       desc: dict.services.items.portiere.desc,
-      image: 'https://images.unsplash.com/photo-1596704944883-fae43e260bb2?q=80&w=800',
+      image: '/services/service-portiere.png',
       gridClass: 't4c-bento-medium',
     },
   ];
@@ -143,7 +144,7 @@ export function Services({ dict }: { dict: any }) {
                   aria-label={service.title}
                 >
                   {/* Background Image Layer */}
-                  <div className="absolute inset-0 z-0 transition-opacity duration-500 ease-out opacity-10 md:opacity-0 md:group-hover:opacity-15">
+                  <div className="absolute inset-0 z-0 transition-opacity duration-500 ease-out opacity-20 md:opacity-0 md:group-hover:opacity-30">
                     <img 
                       src={service.image} 
                       alt="" 
@@ -151,7 +152,7 @@ export function Services({ dict }: { dict: any }) {
                       loading="lazy"
                     />
                     {/* Overlay to darken and blend with site theme */}
-                    <div className="absolute inset-0 bg-[#08080F]/60"></div>
+                    <div className="absolute inset-0 bg-[#08080F]/40"></div>
                   </div>
 
                   {/* Content Layer */}

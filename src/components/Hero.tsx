@@ -189,9 +189,6 @@ export function Hero({ dict }: { dict: any }) {
               src="/hero-truck.png"
               alt="Dépanneuse TOP4CARS"
               className="object-contain w-full h-auto"
-              style={{
-                filter: 'drop-shadow(0 20px 40px rgba(255, 69, 0, 0.25))',
-              }}
             />
           </div>
         </div>      </div>

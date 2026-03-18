@@ -121,10 +121,10 @@ export function Hero({ dict }: { dict: any }) {
             className="t4c-reveal t4c-reveal-delay-2"
             style={{
               fontFamily: 'var(--t4c-font-body)',
-              fontSize: 'clamp(1rem, 2vw, 1.125rem)',
+              fontSize: 'clamp(0.9rem, 1.5vw, 1rem)',
               color: 'var(--t4c-muted)',
-              lineHeight: 1.7,
-              maxWidth: '580px',
+              lineHeight: 1.6,
+              maxWidth: '540px',
               marginBottom: '2rem',
             }}
           >

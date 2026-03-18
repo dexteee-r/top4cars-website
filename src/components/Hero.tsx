@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useRef } from 'react';
+import Image from 'next/image';
 
 function PhoneIcon({ size = 20 }: { size?: number }) {
   return (
@@ -185,10 +186,14 @@ export function Hero({ dict }: { dict: any }) {
         {/* Hero Image */}
         <div className="t4c-reveal t4c-reveal-delay-3 relative flex justify-center lg:justify-end mt-8 lg:mt-0 lg:-mr-12">
           <div className="relative w-full max-w-[850px]">
-            <img
+            <Image
               src="/hero-truck.png"
               alt="Dépanneuse TOP4CARS"
+              width={850}
+              height={510}
+              priority
               className="object-contain w-full h-auto"
+              sizes="(max-width: 768px) 100vw, 850px"
             />
           </div>
         </div>      </div>

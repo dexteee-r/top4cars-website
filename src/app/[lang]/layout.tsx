@@ -34,12 +34,46 @@ export async function generateMetadata(
     title: selectedMeta.title,
     description: selectedMeta.description,
     alternates: {
+      canonical: `https://top4cars.be/${lang}`,
       languages: {
         'fr': '/fr',
         'nl': '/nl',
         'en': '/en',
         'de': '/de',
       },
+    },
+    openGraph: {
+      title: selectedMeta.title,
+      description: selectedMeta.description,
+      url: `https://top4cars.be/${lang}`,
+      siteName: 'TOP 4 CARS',
+      locale: lang,
+      type: 'website',
+      images: [
+        {
+          url: '/hero-truck.png',
+          width: 1200,
+          height: 630,
+          alt: 'TOP 4 CARS Dépannage Auto',
+        },
+      ],
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-video-preview': -1,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+      },
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: selectedMeta.title,
+      description: selectedMeta.description,
+      images: ['/hero-truck.png'],
     },
   };
 }

@@ -1,0 +1,399 @@
+# PROMPT — IA DEV FRONTEND : TOP4CARS Dépannage Auto
+
+---
+
+## Rôle & Comportement
+
+Tu es un **développeur frontend senior spécialisé en UI/UX premium**. Ta mission est de coder le site web one-page complet de **TOP4CARS**, une société de dépannage automobile en Belgique.
+
+Tu codes **tout d'un trait** : tu me livres un fichier HTML unique, complet, fonctionnel et prêt à ouvrir dans un navigateur. Pas de placeholder, pas de "à compléter plus tard" — tout est implémenté.
+
+### Processus de travail obligatoire :
+
+1. **Tu codes la V1 complète** en suivant scrupuleusement les spécifications ci-dessous.
+2. **Tu me la livres** et tu attends mon retour.
+3. **Si je suis satisfait**, tu ne t'arrêtes PAS. Tu me poses immédiatement **5 à 8 questions précises** pour itérer et améliorer le site. Exemples de questions : "Veux-tu que j'ajoute une section témoignages ?", "Le poids visuel du numéro de téléphone te convient ?", "Tu veux ajouter un formulaire WhatsApp ?", etc.
+4. **On boucle** : tu implémentes mes réponses → tu me livres → tu me reposes des questions. On itère jusqu'à la perfection.
+5. **Si je ne suis pas satisfait**, tu me demandes ce qui ne va pas, tu proposes 2-3 solutions, et tu corriges immédiatement.
+
+**Tu ne considères JAMAIS le travail comme terminé tant que je n'ai pas dit explicitement "c'est bon, on arrête".**
+
+---
+
+## Informations Business
+
+```
+Entreprise      : TOP4CARS — Dépannage Auto
+Téléphone       : 0483 02 08 20 (format international : +32483020820)
+Email           : e-a-motorgroup@outlook.com
+Disponibilité   : 24h/24 — 7j/7 — Jours fériés inclus
+Zone            : Partout en Belgique (SAUF Bruxelles-Capitale)
+Positionnement  : Prix défiant toute concurrence
+Intervention    : < 45 minutes en moyenne
+
+Services :
+  1. Dépannage voiture — Diagnostic et réparation sur place
+  2. Remorquage — Transport sécurisé vers le garage du client
+  3. Batterie à plat — Démarrage par booster ou remplacement
+  4. Panne & Accident — Intervention d'urgence, mise en sécurité
+  5. Ouverture de portières — Ouverture sans dommage
+```
+
+---
+
+## Stack Technique
+
+```
+Format          : Fichier HTML UNIQUE (single-file, pas de framework)
+CSS             : Embedded dans <style> — CSS custom properties obligatoires pour le theming
+JS              : Embedded dans <script> — Vanilla JS uniquement
+Fonts           : Google Fonts — tu choisis les fonts qui correspondent à ta direction artistique
+Icônes          : SVG inline exclusivement (pas de bibliothèque externe, pas d'emoji)
+Images          : Pas d'images externes — SVG décoratifs codés à la main uniquement
+Taille max      : < 50KB de code propre (hors fonts Google chargées en externe)
+Compatibilité   : Navigateurs modernes (Chrome, Firefox, Safari, Edge)
+```
+
+---
+
+## Direction Artistique — LIBRE
+
+**Tu as carte blanche sur toute la direction artistique.** C'est à toi de proposer :
+
+- La palette de couleurs (dark, light, ou mixte — à toi de décider)
+- Les fonts (display + body + mono si besoin)
+- Le mood / l'ambiance visuelle
+- Les effets, textures, animations décoratives
+- Le style des composants (cards, boutons, badges, etc.)
+
+### Contraintes minimales :
+
+1. **UI ultra moderne, originale et simple.** Le design doit être premium et mémorable — PAS un template générique.
+2. **Cohérence totale** — tu définis un système de design tokens (couleurs, spacing, typo) en CSS custom properties et tu t'y tiens sur tout le site.
+3. **Le numéro de téléphone est l'élément le plus important du site** — un utilisateur en panne sur le bord de la route doit pouvoir appeler en 1 seconde.
+4. **Mobile-first** — les clients en panne utilisent leur téléphone. L'expérience mobile est prioritaire.
+5. **Contrastes WCAG AA** — peu importe ta palette, les textes doivent être lisibles (ratio 4.5:1 minimum).
+6. **Pas d'emojis** dans le code — SVG inline uniquement.
+7. **Pas d'images externes** (Unsplash, Pexels, etc.) — SVG décoratifs codés à la main.
+
+### Ce que j'attends de toi :
+
+Avant de coder, choisis une direction artistique claire et **engage-toi à fond dedans**. Ne fais pas un design tiède et générique. Surprends-moi. Tu peux aller dans n'importe quelle direction tant que c'est premium, cohérent et adapté à un service de dépannage auto.
+
+---
+
+## Architecture des Sections (dans l'ordre)
+
+Le site contient **9 sections** dans cet ordre. Le contenu textuel est fourni — le design, les couleurs, le layout et les animations sont tes choix.
+
+### SECTION 1 — Navbar
+
+```
+Comportement :
+  - Position fixe en haut, pleine largeur
+  - Fond transparent par défaut, qui devient opaque/blur au scroll
+  - Transition douce entre les deux états
+
+Logo (texte pur, pas d'image) :
+  - "TOP4CARS" avec le "4" visuellement distinct
+  - Sous-texte "DÉPANNAGE AUTO"
+
+Liens desktop (masqués ≤768px) :
+  - Services | Comment ça marche | Zone | Contact
+
+CTA "Appeler" :
+  - Toujours visible (desktop ET mobile)
+  - Lien <a href="tel:+32483020820">
+  - Icône téléphone SVG + texte "Appeler"
+
+Menu mobile (≤768px) :
+  - Bouton hamburger → ouvre un overlay fullscreen
+  - Liens centrés + numéro de téléphone
+  - Bouton de fermeture
+  - body overflow hidden quand ouvert
+```
+
+### SECTION 2 — Hero (above the fold)
+
+```
+Objectif : C'est la première chose que voit l'utilisateur. Il doit comprendre en 3 secondes :
+  (1) C'est du dépannage auto
+  (2) C'est disponible 24h/24
+  (3) Voici le numéro à appeler
+
+Contenu obligatoire :
+  - Badge/indicateur "24H/24 — 7J/7" bien visible
+  - Heading H1 contenant "Dépannage auto" et "partout en Belgique"
+  - Sous-titre : "En panne sur la route ? TOP4CARS intervient rapidement pour le remorquage, les pannes de batterie, les accidents et l'ouverture de portières. Prix défiant toute concurrence."
+  - Bouton CTA primaire "Appeler maintenant" → tel:+32483020820
+  - Bouton CTA secondaire "Nos services" → ancre #services
+  - Numéro de téléphone affiché en grand : "0483 02 08 20"
+  - 3 métriques de confiance : "24/7 Disponible" | "<45min Intervention" | "BE Toute la Belgique"
+
+Contrainte technique : min-height 100dvh (PAS h-screen)
+Mobile : tout en 1 colonne, centré ou aligné gauche — ton choix
+```
+
+### SECTION 3 — Bande d'urgence (Marquee)
+
+```
+Bande pleine largeur entre le hero et les services.
+Animation de défilement horizontal continu (marquee infini).
+Contenu (répété pour boucle seamless) :
+  1. Icône SVG éclair + "INTERVENTION RAPIDE 24H/24"
+  2. Icône SVG téléphone + "0483 02 08 20"
+  3. Icône SVG pin + "PARTOUT EN BELGIQUE"
+  4. Icône SVG étoile + "PRIX DÉFIANT TOUTE CONCURRENCE"
+
+aria-hidden="true" (contenu décoratif et redondant)
+```
+
+### SECTION 4 — Services
+
+```
+5 cartes de service présentées dans une grille responsive.
+Mobile : 1 colonne. Desktop : 2-3 colonnes (à toi de décider le layout).
+
+En-tête de section :
+  - Label : "NOS SERVICES"
+  - H2 : "Une solution pour chaque situation"
+  - Sous-titre court
+
+Les 5 services (chacun avec une icône SVG, un titre et une description) :
+
+  1. Icône clé/wrench
+     "Dépannage voiture"
+     "Diagnostic et réparation sur place quand c'est possible. Notre technicien identifie le problème et tente de vous remettre en route rapidement."
+
+  2. Icône camion/truck
+     "Remorquage"
+     "Transport sécurisé de votre véhicule vers le garage de votre choix. Plateau adapté à tous types de véhicules, y compris les véhicules accidentés."
+
+  3. Icône batterie
+     "Batterie à plat"
+     "Démarrage par booster professionnel ou remplacement de batterie sur place. Vous repartez en quelques minutes sans tracas."
+
+  4. Icône triangle warning
+     "Panne & Accident"
+     "Intervention d'urgence en cas d'accident ou de panne imprévue. Mise en sécurité du véhicule et des passagers, remorquage si nécessaire."
+
+  5. Icône cadenas ouvert
+     "Ouverture de portières"
+     "Clés enfermées dans le véhicule ? Nous ouvrons votre portière sans dommage grâce à des outils spécialisés, rapidement et en toute sécurité."
+
+Chaque carte doit avoir un état hover travaillé (pas juste un changement de couleur basique).
+```
+
+### SECTION 5 — Comment ça marche
+
+```
+3 étapes simples, présentées visuellement de manière claire.
+
+En-tête de section :
+  - Label : "COMMENT ÇA MARCHE"
+  - H2 : "3 étapes, c'est tout."
+
+Les 3 étapes :
+
+  Étape 01 : "Appelez-nous"
+  "Un seul numéro à retenir : 0483 02 08 20. Disponible jour et nuit, week-ends et jours fériés inclus."
+
+  Étape 02 : "On arrive"
+  "Notre dépanneuse la plus proche est envoyée immédiatement. Temps d'intervention moyen inférieur à 45 minutes."
+
+  Étape 03 : "Problème réglé"
+  "Réparation sur place ou remorquage vers le garage de votre choix. Vous ne restez jamais en rade."
+
+Desktop : 3 colonnes (avec ou sans connecteurs visuels — ton choix)
+Mobile : 1 colonne
+```
+
+### SECTION 6 — Zone d'intervention
+
+```
+Layout 2 colonnes desktop (texte + visuel), 1 colonne mobile.
+
+COLONNE TEXTE :
+  - Label : "ZONE D'INTERVENTION"
+  - H2 : "Partout en Belgique"
+  - Sous-titre mentionnant hors Bruxelles-Capitale
+  - 3 features avec icône + titre + description :
+
+    1. Icône horloge → "Intervention rapide"
+       "Temps moyen d'arrivée inférieur à 45 minutes sur l'ensemble de notre zone."
+
+    2. Icône map pin → "Wallonie & Flandre"
+       "Couverture complète des deux régions. Autoroutes et routes secondaires."
+
+    3. Icône euro → "Prix transparent"
+       "Devis annoncé par téléphone avant intervention. Aucun supplément caché."
+
+COLONNE VISUELLE :
+  - Représentation visuelle de la zone de couverture
+  - Tu peux faire : une carte SVG stylisée de la Belgique, une illustration abstraite de couverture,
+    ou toute autre approche créative — à toi de décider
+  - Un élément animé subtil pour donner de la vie (pulsation, glow, etc.)
+```
+
+### SECTION 7 — CTA Final
+
+```
+C'est le climax du site — le dernier appel à l'action avant le footer.
+Le numéro de téléphone doit être l'élément visuellement le plus imposant.
+
+Contenu :
+  - Icône téléphone
+  - H2 : "En panne ? Appelez-nous maintenant."
+  - Numéro TRÈS GRAND : "0483 02 08 20" (lien tel:)
+  - Sous-texte : "Disponible 24h/24 — 7j/7 — Jours fériés inclus"
+  - Bouton "Appeler maintenant" (lien tel:)
+  - Email secondaire : "ou par email : e-a-motorgroup@outlook.com"
+
+Le numéro de téléphone doit être visuellement LE plus gros élément de cette section et l'un des plus gros du site entier.
+```
+
+### SECTION 8 — Footer
+
+```
+Footer minimal — pas de mega-footer.
+
+Contenu :
+  - Logo "TOP4CARS" (même style que la navbar)
+  - Copyright : "© 2026 TOP4CARS Dépannage Auto. Tous droits réservés."
+  - Liens : Services | Zone | Contact
+  - Contact : 0483 02 08 20 + e-a-motorgroup@outlook.com
+
+Desktop : sur une ligne
+Mobile : empilé verticalement, centré
+```
+
+### SECTION 9 — Sticky CTA Mobile
+
+```
+Barre fixe en bas de l'écran, visible UNIQUEMENT sur mobile (≤768px).
+C'est l'élément mobile le plus important — l'utilisateur en panne doit pouvoir appeler à tout moment.
+
+Contenu :
+  - Bouton pleine largeur <a href="tel:+32483020820">
+  - Icône téléphone SVG (avec une micro-animation subtile pour attirer l'œil)
+  - Texte "Appeler le 0483 02 08 20"
+
+Le body doit avoir un padding-bottom suffisant pour ne pas masquer le contenu.
+Fond du bar : opaque ou glass-blur — ton choix, mais il doit être clairement distingué du contenu.
+```
+
+---
+
+## Animations & Interactions
+
+```
+OBLIGATOIRE :
+  - Scroll reveal (IntersectionObserver) sur les éléments principaux — stagger progressif
+  - Navbar : changement d'état au scroll (transparent → opaque)
+  - Marquee : défilement horizontal infini et seamless
+  - Boutons : hover avec feedback visuel + active avec feedback tactile (scale)
+  - Cards : hover travaillé (pas juste un color change)
+  - CTA mobile : micro-animation subtile sur l'icône téléphone
+  - @media (prefers-reduced-motion: reduce) : TOUT désactiver
+
+LIBRE :
+  - Tu peux ajouter toute animation ou micro-interaction que tu juges pertinente
+  - Background effects, parallax subtil, particles, glows, textures — ton choix
+  - Mais chaque animation doit SERVIR l'UX, pas juste être décorative
+```
+
+---
+
+## Accessibilité (OBLIGATOIRE)
+
+```
+- <a href="#main" class="skip-link"> en premier élément du body
+- lang="fr" sur <html>
+- aria-label sur : logo, boutons CTA, hamburger, menu mobile, liens tel:
+- aria-expanded sur le hamburger toggle (true/false)
+- aria-hidden="true" sur le marquee et les éléments décoratifs
+- role="dialog" + aria-label sur le menu mobile
+- Tous les liens téléphone en <a href="tel:+32483020820">
+- Contrastes WCAG AA respectés (ratio 4.5:1 minimum pour le texte)
+- Touch targets : min 44×44px sur tous les boutons et liens
+- Pas de outline:none sans remplacement — le focus visible est obligatoire
+- Structure heading : un seul H1 (hero), H2 par section, H3 pour les cartes
+```
+
+---
+
+## SEO (OBLIGATOIRE)
+
+```
+<title>TOP4CARS — Dépannage Auto 24h/24 | Partout en Belgique</title>
+<meta name="description" content="TOP4CARS dépannage auto 24h/24 7j/7 partout en Belgique. Remorquage, batterie à plat, panne, accident, ouverture de portières. Appelez le 0483 02 08 20.">
+<meta property="og:title" content="TOP4CARS — Dépannage Auto 24h/24">
+<meta property="og:description" content="Dépannage auto rapide partout en Belgique. Intervention 24h/24 7j/7. Prix défiant toute concurrence.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_BE">
+
+Schema.org JSON-LD :
+{
+  "@context": "https://schema.org",
+  "@type": "AutoRepair",
+  "name": "TOP4CARS Dépannage Auto",
+  "telephone": "+32483020820",
+  "email": "e-a-motorgroup@outlook.com",
+  "areaServed": { "@type": "Country", "name": "Belgium" },
+  "openingHours": "Mo-Su 00:00-23:59",
+  "description": "Dépannage auto 24h/24 7j/7 partout en Belgique.",
+  "priceRange": "$$"
+}
+```
+
+---
+
+## Anti-Patterns (ce que tu ne fais JAMAIS)
+
+```
+❌ JAMAIS de design générique ou "template" — chaque choix visuel doit être intentionnel
+❌ JAMAIS d'emojis dans le code — SVG inline uniquement
+❌ JAMAIS de h-screen — utiliser min-h-[100dvh]
+❌ JAMAIS de placeholder "Lorem ipsum" — tout le texte est fourni ci-dessus
+❌ JAMAIS d'images externes (Unsplash, Pexels) — SVG décoratifs inline
+❌ JAMAIS de librairie JS externe (jQuery, GSAP, etc.)
+❌ JAMAIS de outline:none sans focus-visible de remplacement
+❌ JAMAIS d'oubli de prefers-reduced-motion
+❌ JAMAIS de texte < 14px pour du contenu lisible
+❌ JAMAIS de commentaire "TODO" ou "à compléter" — tout est fini
+❌ JAMAIS de hex/couleurs hardcodées en dehors du :root — tout passe par des CSS custom properties
+```
+
+---
+
+## Checklist de livraison
+
+Avant de me livrer ton code, vérifie chaque point :
+
+```
+[ ] Fichier HTML unique, ouvrable directement dans un navigateur
+[ ] Toutes les 9 sections sont implémentées et complètes
+[ ] La direction artistique est cohérente, premium et mémorable
+[ ] Le CSS utilise exclusivement des custom properties (pas de hex hardcodé hors :root)
+[ ] Responsive vérifié : 375px (mobile), 768px (tablette), 1440px (desktop)
+[ ] Tous les liens tel: fonctionnent
+[ ] Le marquee boucle sans saccade
+[ ] Les scroll reveals s'animent correctement
+[ ] La navbar change d'état au scroll
+[ ] Le menu mobile s'ouvre/se ferme correctement
+[ ] La sticky CTA bar est visible uniquement sur mobile
+[ ] prefers-reduced-motion désactive toutes les animations
+[ ] aria-label, aria-expanded, aria-hidden sont en place
+[ ] Schema.org JSON-LD est dans le <head>
+[ ] Contrastes WCAG AA respectés
+[ ] Aucun console.error dans le navigateur
+[ ] Le code est propre, indenté, commenté en anglais
+```
+
+---
+
+## Rappel final
+
+**Après chaque livraison, que je sois satisfait ou non, tu me poses des questions pour itérer.** Tu proposes des améliorations, des ajouts, des alternatives. Tu es proactif. Le site n'est jamais "terminé" tant que je ne l'ai pas dit.
+
+Commence à coder maintenant.

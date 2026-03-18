@@ -52,9 +52,17 @@ const steps = [
   },
 ];
 
-function StepCard({ step, index }: { step: typeof steps[0]; index: number }) {
+function StepCard({ step, index }: { step: any; index: number }) {
   const ref = useScrollReveal<HTMLDivElement>();
   const delay = (index + 1) as 1 | 2 | 3;
+
+  // Asymmetric offsets for the ghost numbers to break the grid
+  const offsets = [
+    { top: '-0.5rem', right: '1.25rem' },
+    { top: '1.5rem', right: '-0.5rem' },
+    { top: '0.5rem', right: '2.5rem' },
+  ];
+  const offset = offsets[index % 3];
 
   return (
     <div
@@ -66,21 +74,26 @@ function StepCard({ step, index }: { step: typeof steps[0]; index: number }) {
         style={{
           background: 'var(--t4c-card)',
           border: '1px solid var(--t4c-border)',
-          borderRadius: '20px',
-          padding: '2.25rem 2rem',
+          borderRadius: '24px',
+          padding: '2.5rem 2.25rem',
           position: 'relative',
           height: '100%',
+          transition: 'transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1)',
         }}
+        className="t4c-service-card" // Reusing the spring hover effect
       >
-        {/* Step number ghost */}
+        {/* Step number ghost - Offset asymmetrically */}
         <div
           className="t4c-step-number t4c-mono"
           aria-hidden="true"
           style={{
             position: 'absolute',
-            top: '1rem',
-            right: '1.25rem',
-            fontSize: '5rem',
+            top: offset.top,
+            right: offset.right,
+            fontSize: '5.5rem',
+            opacity: 0.15,
+            pointerEvents: 'none',
+            userSelect: 'none',
           }}
         >
           {step.id}

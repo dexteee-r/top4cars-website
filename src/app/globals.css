@@ -496,7 +496,6 @@ h1, h2 {
 .t4c-mobile-menu.open .t4c-mobile-nav-link:nth-child(3) { transition-delay: 0.15s; }
 .t4c-mobile-menu.open .t4c-mobile-nav-link:nth-child(4) { transition-delay: 0.2s; }
 .t4c-mobile-menu.open .t4c-mobile-nav-link:nth-child(5) { transition-delay: 0.25s; }
-}
 .t4c-mobile-nav-link:hover { color: var(--t4c-accent); }
 .t4c-mobile-nav-link:focus-visible {
   outline: 3px solid var(--t4c-phone);

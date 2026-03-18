@@ -183,8 +183,8 @@ export function Hero({ dict }: { dict: any }) {
         </div>
 
         {/* Hero Image */}
-        <div className="t4c-reveal t4c-reveal-delay-3 relative flex justify-center lg:justify-end mt-8 lg:mt-0">
-          <div className="relative w-full max-w-[650px]">
+        <div className="t4c-reveal t4c-reveal-delay-3 relative flex justify-center lg:justify-end mt-8 lg:mt-0 lg:-mr-12">
+          <div className="relative w-full max-w-[850px]">
             <img
               src="/hero-truck.png"
               alt="Dépanneuse TOP4CARS"
